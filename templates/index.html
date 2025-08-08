@@ -46,13 +46,22 @@
     <ul id="chapters">
         {% for chapter in chapters %}
         {% if chapter.id == 0 %}
-        <li data-audio="/static/audio/0.mp3">{{ chapter.title }}</li>
+        <li data-audio="{{ url_for('static', filename='audio/0.mp3') }}">
+            {{ chapter.title }}
+        </li>
         {% else %}
         <li>
             {{ chapter.title }}
             <ul class="section-list">
                 {% for section in chapter.sections %}
-                <li data-audio="/static/audio/{{ chapter.id }}-{{ section.id }}.mp3">{{ section.title }}</li>
+                <li
+                    data-audio="{{ url_for(
+                        'static',
+                        filename='audio/' ~ chapter.id ~ '-' ~ section.id ~ '.mp3'
+                    ) }}"
+                >
+                    {{ section.title }}
+                </li>
                 {% endfor %}
             </ul>
         </li>
@@ -60,7 +69,10 @@
         {% endfor %}
     </ul>
     <script>
-        const pdfPath = "{{ url_for('static', filename='The Science of Prestige Television.pdf') }}";
+        const pdfPath = "{{ url_for(
+            'static',
+            filename='The Science of Prestige Television.pdf'
+        ) }}";
     </script>
     <script src="{{ url_for('static', filename='js/player.js') }}"></script>
 </body>
