@@ -1,13 +1,25 @@
-import os
-import sys
+"""Main application module for Advanced Writing audio book site.
+
+This module defines the Flask application that serves the single-page
+interface for listening to the audio book. It exposes ``app`` for WSGI
+servers and the Flask CLI.
+"""
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 
-sys.path.insert(0, os.path.dirname(__file__))
+@app.route("/")
+def index() -> str:
+    """Render the main page of the audio book site.
+
+    Returns:
+        Rendered HTML for the index page.
+    """
+    book_title = "The Science of Prestige Television"
+    return render_template("index.html", book_title=book_title)
 
 
-def app(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/plain')])
-    message = 'It works!\n'
-    version = 'Python v' + sys.version.split()[0] + '\n'
-    response = '\n'.join([message, version])
-    return [response.encode()]
+if __name__ == "__main__":  # pragma: no cover - convenience for local running
+    app.run(debug=True)

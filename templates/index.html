@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ book_title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chapters { list-style-type: none; padding: 0; }
+        #chapters > li { margin: 5px 0; cursor: pointer; }
+        .section-list { list-style-type: none; padding-left: 20px; display: none; }
+        .section-list li { cursor: pointer; margin: 3px 0; }
+        button { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>{{ book_title }}</h1>
+    <button id="pdf-button">Open PDF</button>
+    <br>
+    <audio id="audioPlayer" controls></audio>
+    <ul id="chapters"></ul>
+    <script>
+        const jsonPath = "{{ url_for('static', filename='The Science of Prestige Television.json') }}";
+        const pdfPath = "{{ url_for('static', filename='The Science of Prestige Television.pdf') }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/player.js') }}"></script>
+</body>
+</html>
