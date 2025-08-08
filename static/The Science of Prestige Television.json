@@ -1,0 +1,199 @@
+{
+	"chapters": [
+		{
+			"id": 0,
+			"title": "Overview"			
+		},
+		{
+			"id": 1,
+			"title": "Series Engines and Premise Design",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Introduction"
+				},
+				{
+					"id": 2,
+					"title": "What is a \"Series Engine\"?"
+				},
+				{
+					"id": 3,
+					"title": "Archetypal Series Engines"
+				},
+				{
+					"id": 4,
+					"title": "One Premise, Different Engines: Format, Tone, and Structure Matter"
+				},
+				{
+					"id": 5,
+					"title": "Series Engine Canvas (Worksheet)"
+				},
+				{
+					"id": 6,
+					"title": "Conclusion"
+				}
+				
+			]
+		},
+		{
+			"id": 2,
+			"title": "Seasonal Architecture",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Network Season Structure: The Four-Quartile Model"
+				},
+				{
+					"id": 2,
+					"title": "Streaming Season Structure: The Five-Act Model"
+				},
+				{
+					"id": 3,
+					"title": "Premium Cable: The HBO Penultimate-Spike Model"
+				},
+				{
+					"id": 4,
+					"title": "Beat Map: Game of Thrones (Season 3)"
+				},
+				{
+					"id": 5,
+					"title": "Downton Abbey (Season 2)"
+				},
+				{
+					"id": 6,
+					"title": "Beat Map: Breaking Bad (Season 4)"
+				},
+				{
+					"id": 7,
+					"title": "Beat Map: The Gilded Age (Season 1)"
+				},
+				{
+					"id": 8,
+					"title": "Season-Arc Planning Template"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"title": "Character Arc Mapping",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Multi-Layer Character Arcs in Television"
+				},
+				{
+					"id": 2,
+					"title": "Key Narrative Roles: Protagonist, Antagonist, Foil, Shadow, Floating Catalyst"
+				},
+				{
+					"id": 3,
+					"title": "Shifting Arcs from Season to Season"
+				},
+				{
+					"id": 4,
+					"title": "Character Turn Tracker Template - with Examples"
+				},
+				{
+					"id": 5,
+					"title": "Using the Tracker and Final Tips"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"title": "Episode Typology",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Episode Type Placement Matrix"
+				},
+				{
+					"id": 2,
+					"title": "Pilot Episodes"
+				},
+				{
+					"id": 3,
+					"title": "Bottle Episodes"
+				},
+				{
+					"id": 4,
+					"title": "Flashback Episodes"
+				},
+				{
+					"id": 5,
+					"title": "Anthology Stunt (Departure) Episodes"
+				},
+				{
+					"id": 6,
+					"title": "Penultimate Shock Episodes"
+				},
+				{
+					"id": 7,
+					"title": "Finale Episodes"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"title": "Writers-Room Workflow",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Writers' Room Hierarchy and Key Roles"
+				},
+				{
+					"id": 2,
+					"title": "Writers' Room Workflow Phases"
+				},
+				{
+					"id": 3,
+					"title": "Different Writers' Room Models: Case Studies"
+				},
+				{
+					"id": 4,
+					"title": "Running a Room Day-to-Day - Practical Checklist"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"title": "Advanced Techniques and Pitfalls",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Introduction"
+				},
+				{
+					"id": 2,
+					"title": "Advanced Storytelling Techniques in Prestige TV"
+				},
+				{
+					"id": 3,
+					"title": "Major Creative Pitfalls and How to Avoid Them"
+				},
+				{
+					"id": 4,
+					"title": "Creative Fixes and Lessons Learned"
+				},
+				{
+					"id": 5,
+					"title": "Comparative Pitfalls Table"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"title": "Appendices",
+			"sections": [
+				{
+					"id": 1,
+					"title": "Printable Creative Tools"
+				},
+				{
+					"id": 2,
+					"title": "Reading and Viewing Syllabus"
+				}
+			]
+		}
+	]
+}
