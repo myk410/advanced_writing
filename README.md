@@ -4,19 +4,20 @@ This repository hosts a one-page [Flask](https://flask.palletsprojects.com/) app
 
 ## Features
 
-* **Single-page audio player** – The site loads once and uses Ajax to retrieve chapter and section information without requiring full page reloads.
+* **Single-page audio player** – The site loads once and presents a hierarchical chapter list; selecting a section begins playback without a full page reload.
 * **Hierarchical chapter list** – Chapter titles are displayed in a left-aligned list. Selecting a chapter reveals its sections; selecting a section begins playback.
     * Chapter `0` is a special case with only one section; clicking the chapter immediately plays `0.mp3`.
 * **Automatic audio switching** – Starting a new track stops the currently playing audio before the next one begins.
 * **Progress persistence** – Cookies remember the last track and timestamp so users can continue where they left off after closing or reloading the page.
 * **Read-along PDF** – A button at the top opens the book PDF in a new window so the user can read along with the audio.
+* **Mobile friendly** – A responsive layout and scalable controls make the site easy to use on phones and tablets.
 
 ## Data sources
 
 * `static/` contains the book JSON file and the PDF.
 * `static/audio/` holds the audio files. Naming follows the pattern `<chapter>-<section>.mp3` except for chapter `0`, which is stored as `0.mp3`.
 
-The JSON file maps chapter and section IDs to titles and is used by the front end to build the playlist dynamically.
+The JSON file maps chapter and section IDs to titles. The server reads this file to render the chapter list.
 
 ## Running locally
 

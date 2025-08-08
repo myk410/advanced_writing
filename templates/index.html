@@ -2,24 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ book_title }}</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        #chapters { list-style-type: none; padding: 0; }
-        #chapters > li { margin: 5px 0; cursor: pointer; }
-        .section-list { list-style-type: none; padding-left: 20px; display: none; }
-        .section-list li { cursor: pointer; margin: 3px 0; }
-        button { margin-bottom: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 700px;
+        }
+        audio,
+        button {
+            width: 100%;
+            max-width: 100%;
+        }
+        #chapters {
+            list-style: none;
+            padding: 0;
+        }
+        #chapters > li {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .section-list {
+            list-style: none;
+            padding-left: 20px;
+            display: none;
+        }
+        .section-list li {
+            cursor: pointer;
+            margin: 3px 0;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>{{ book_title }}</h1>
     <button id="pdf-button">Open PDF</button>
-    <br>
     <audio id="audioPlayer" controls></audio>
-    <ul id="chapters"></ul>
+    <ul id="chapters">
+        {% for chapter in chapters %}
+        {% if chapter.id == 0 %}
+        <li data-audio="/static/audio/0.mp3">{{ chapter.title }}</li>
+        {% else %}
+        <li>
+            {{ chapter.title }}
+            <ul class="section-list">
+                {% for section in chapter.sections %}
+                <li data-audio="/static/audio/{{ chapter.id }}-{{ section.id }}.mp3">{{ section.title }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
     <script>
-        const jsonPath = "{{ url_for('static', filename='The Science of Prestige Television.json') }}";
         const pdfPath = "{{ url_for('static', filename='The Science of Prestige Television.pdf') }}";
     </script>
     <script src="{{ url_for('static', filename='js/player.js') }}"></script>

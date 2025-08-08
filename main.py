@@ -5,6 +5,9 @@ interface for listening to the audio book. It exposes ``app`` for WSGI
 servers and the Flask CLI.
 """
 
+from pathlib import Path
+import json
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -18,7 +21,10 @@ def index() -> str:
         Rendered HTML for the index page.
     """
     book_title = "The Science of Prestige Television"
-    return render_template("index.html", book_title=book_title)
+    json_path = Path(app.static_folder) / "The Science of Prestige Television.json"
+    with json_path.open(encoding="utf-8") as handle:
+        chapters = json.load(handle).get("chapters", [])
+    return render_template("index.html", book_title=book_title, chapters=chapters)
 
 
 if __name__ == "__main__":  # pragma: no cover - convenience for local running
