@@ -18,10 +18,17 @@
         #chapters {
             list-style: none;
             padding: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         #chapters > li {
-            margin: 5px 0;
+            margin: 0;
             cursor: pointer;
+            padding: 5px 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        #chapters > li:last-child {
+            border-bottom: none;
         }
         .section-list {
             list-style: none;
@@ -31,6 +38,13 @@
         .section-list li {
             cursor: pointer;
             margin: 3px 0;
+            padding: 3px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .playing {
+            background-color: #f0f8ff;
+            border-color: #007bff;
         }
         @media (max-width: 600px) {
             body {
