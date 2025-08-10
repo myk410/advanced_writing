@@ -15,19 +15,34 @@
             width: 100%;
             max-width: 100%;
         }
-        #chapters {
+        #tabs {
+            margin: 10px 0;
+        }
+        .tab-button {
+            padding: 6px 12px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .tab-button.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        #chapters,
+        #podcastList {
             list-style: none;
             padding: 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        #chapters > li {
+        #chapters > li,
+        #podcastList > li {
             margin: 0;
             cursor: pointer;
             padding: 5px 10px;
             border-bottom: 1px solid #ccc;
         }
-        #chapters > li:last-child {
+        #chapters > li:last-child,
+        #podcastList > li:last-child {
             border-bottom: none;
         }
         .section-list {
@@ -55,33 +70,42 @@
 </head>
 <body>
     <h1>{{ book_title }}</h1>
+    <div id="tabs">
+        <button class="tab-button active" data-target="audiobook">Audiobook</button>
+        <button class="tab-button" data-target="podcasts">Podcast</button>
+    </div>
     <button id="pdf-button">Open PDF</button>
     <audio id="audioPlayer" controls></audio>
-    <ul id="chapters">
-        {% for chapter in chapters %}
-        {% if chapter.id == 0 %}
-        <li data-audio="{{ url_for('static', filename='audio/0.mp3') }}">
-            {{ chapter.title }}
-        </li>
-        {% else %}
-        <li>
-            {{ chapter.title }}
-            <ul class="section-list">
-                {% for section in chapter.sections %}
-                <li
-                    data-audio="{{ url_for(
-                        'static',
-                        filename='audio/' ~ chapter.id ~ '-' ~ section.id ~ '.mp3'
-                    ) }}"
-                >
-                    {{ section.title }}
-                </li>
-                {% endfor %}
-            </ul>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
+    <div id="audiobook" class="tab-content">
+        <ul id="chapters">
+            {% for chapter in chapters %}
+            {% if chapter.id == 0 %}
+            <li data-audio="{{ url_for('static', filename='audio/0.mp3') }}">
+                {{ chapter.title }}
+            </li>
+            {% else %}
+            <li>
+                {{ chapter.title }}
+                <ul class="section-list">
+                    {% for section in chapter.sections %}
+                    <li
+                        data-audio="{{ url_for(
+                            'static',
+                            filename='audio/' ~ chapter.id ~ '-' ~ section.id ~ '.mp3'
+                        ) }}"
+                    >
+                        {{ section.title }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="podcasts" class="tab-content" style="display: none;">
+        <ul id="podcastList"></ul>
+    </div>
     <script>
         const pdfPath = "{{ url_for(
             'static',
