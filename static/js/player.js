@@ -1,7 +1,6 @@
 (function () {
     const audio = document.getElementById('audioPlayer');
     const pdfButton = document.getElementById('pdf-button');
-    const trackEls = Array.from(document.querySelectorAll('[data-audio]'));
     let currentTrackEl = null;
 
     pdfButton.addEventListener('click', () => {
@@ -13,7 +12,8 @@
             src: audio.getAttribute('data-track') || '',
             time: audio.currentTime || 0
         };
-        document.cookie = 'audiobook=' + encodeURIComponent(JSON.stringify(data)) + ';path=/';
+        document.cookie =
+            'audiobook=' + encodeURIComponent(JSON.stringify(data)) + ';path=/';
     }
 
     function loadProgress() {
@@ -31,6 +31,10 @@
         }
     }
 
+    function getTrackEls() {
+        return Array.from(document.querySelectorAll('[data-audio]'));
+    }
+
     function setTrack(src, el, autoplay = true) {
         audio.pause();
         audio.src = src;
@@ -40,7 +44,9 @@
             currentTrackEl.classList.remove('playing');
         }
         if (!el) {
-            el = trackEls.find((t) => t.getAttribute('data-audio') === src) || null;
+            el = getTrackEls().find(
+                (t) => t.getAttribute('data-audio') === src
+            ) || null;
         }
         if (el) {
             const parentList = el.closest('.section-list');
@@ -62,9 +68,10 @@
         if (!currentTrackEl) {
             return;
         }
-        const idx = trackEls.indexOf(currentTrackEl);
-        if (idx >= 0 && idx < trackEls.length - 1) {
-            const nextEl = trackEls[idx + 1];
+        const els = getTrackEls();
+        const idx = els.indexOf(currentTrackEl);
+        if (idx >= 0 && idx < els.length - 1) {
+            const nextEl = els[idx + 1];
             const parentList = nextEl.closest('.section-list');
             if (parentList) {
                 parentList.style.display = 'block';
@@ -76,21 +83,51 @@
     audio.addEventListener('timeupdate', saveProgress);
     audio.addEventListener('ended', playNext);
 
-    document.querySelectorAll('[data-audio]').forEach((el) => {
-        el.addEventListener('click', (evt) => {
+    document.addEventListener('click', (evt) => {
+        const el = evt.target.closest('[data-audio]');
+        if (el) {
             evt.stopPropagation();
             setTrack(el.getAttribute('data-audio'), el);
-        });
+        }
     });
 
     document.querySelectorAll('#chapters > li').forEach((chapter) => {
         const sections = chapter.querySelector('.section-list');
         if (sections) {
             chapter.addEventListener('click', () => {
-                sections.style.display = sections.style.display === 'none' ? 'block' : 'none';
+                sections.style.display =
+                    sections.style.display === 'none' ? 'block' : 'none';
             });
         }
     });
 
+    document.querySelectorAll('.tab-button').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            document
+                .querySelectorAll('.tab-button')
+                .forEach((b) => b.classList.remove('active'));
+            btn.classList.add('active');
+            const target = btn.getAttribute('data-target');
+            document.querySelectorAll('.tab-content').forEach((c) => {
+                c.style.display = c.id === target ? 'block' : 'none';
+            });
+        });
+    });
+
+    function loadPodcasts() {
+        fetch('/podcasts')
+            .then((resp) => resp.json())
+            .then((items) => {
+                const list = document.getElementById('podcastList');
+                items.forEach((item) => {
+                    const li = document.createElement('li');
+                    li.textContent = item.title;
+                    li.setAttribute('data-audio', item.src);
+                    list.appendChild(li);
+                });
+            });
+    }
+
+    loadPodcasts();
     loadProgress();
 })();

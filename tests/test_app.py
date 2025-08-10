@@ -1,5 +1,4 @@
 """Tests for the Advanced Writing Flask application."""
-
 import os
 import sys
 
@@ -25,3 +24,13 @@ def test_chapter_list_rendered() -> None:
     with json_path.open(encoding="utf-8") as handle:
         first_title = json.load(handle)["chapters"][0]["title"]
     assert first_title.encode() in response.data
+
+
+def test_podcast_route() -> None:
+    """The podcast route should return available podcast metadata."""
+    client = app.test_client()
+    response = client.get("/podcasts")
+    assert response.status_code == 200
+    data = response.get_json()
+    assert isinstance(data, list)
+    assert any(item["id"] == 1 for item in data)

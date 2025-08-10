@@ -11,11 +11,14 @@ This repository hosts a one-page [Flask](https://flask.palletsprojects.com/) app
 * **Progress persistence** – Cookies remember the last track and timestamp so users can continue where they left off after closing or reloading the page.
 * **Read-along PDF** – A button at the top opens the book PDF in a new window so the user can read along with the audio.
 * **Mobile friendly** – A responsive layout and scalable controls make the site easy to use on phones and tablets.
+* **Podcast tab** – A second tab lists podcast episodes for each chapter and
+  loads them asynchronously.
 
 ## Data sources
 
 * `static/` contains the book JSON file and the PDF.
 * `static/audio/` holds the audio files. Naming follows the pattern `<chapter>-<section>.mp3` except for chapter `0`, which is stored as `0.mp3`.
+* `static/podcast/` contains chapter-based podcast MP3 files named `1.mp3`, `2.mp3`, and so on.
 
 The JSON file maps chapter and section IDs to titles. The server reads this file to render the chapter list.
 
@@ -45,7 +48,8 @@ The JSON file maps chapter and section IDs to titles. The server reads this file
 static/
 ├── The Science of Prestige Television.json  # Chapter and section metadata
 ├── The Science of Prestige Television.pdf   # Book PDF
-└── audio/                                   # MP3 files
+├── audio/                                   # Audiobook MP3 files
+└── podcast/                                 # Podcast MP3 files
 ```
 
 ## Contributing
