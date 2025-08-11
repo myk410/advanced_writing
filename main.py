@@ -44,8 +44,11 @@ def podcasts() -> Response:
     podcast_dir = Path(app.static_folder) / "podcast"
     files = []
     for path in sorted(podcast_dir.glob("*.mp3")):
+        # filenames are prefixed with the chapter id, e.g.
+        # ``1-Series-Engines-and-Premise-Design.mp3``
+        stem = path.stem.split("-", 1)[0]
         try:
-            chap_id = int(path.stem)
+            chap_id = int(stem)
         except ValueError:  # skip unexpected files
             continue
         if chap_id == 0:
