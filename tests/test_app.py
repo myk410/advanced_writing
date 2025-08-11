@@ -34,7 +34,6 @@ def test_podcast_route() -> None:
     data = response.get_json()
     assert isinstance(data, list)
     ids = [item["id"] for item in data]
-    assert ids == sorted(ids)
+    assert ids == list(range(1, 8))
     for item in data:
-        assert item["src"].startswith(f"/static/podcast/{item['id']}-")
-        assert item["src"].endswith(".mp3")
+        assert item["src"] == f"/static/podcast/{item['id']}.mp3"
