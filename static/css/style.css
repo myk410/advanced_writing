@@ -68,7 +68,8 @@ ul {
     background: transparent;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    font-size: clamp(0.6rem, 1.2vw, 1rem);
+    padding: 0 0.25rem;
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
@@ -103,4 +104,31 @@ ul {
     left: 34.72%;
     width: 13.19%;
     height: 6%;
+}
+
+@media (max-width: 1366px) {
+    #pdf-button {
+        top: 52%;
+        left: 14%;
+        width: 72%;
+        height: 5.5%;
+    }
+
+    #audiobook-button {
+        top: 60%;
+        left: 14%;
+        width: 72%;
+        height: 5.5%;
+    }
+
+    #podcast-button {
+        top: 69%;
+        left: 14%;
+        width: 72%;
+        height: 5.5%;
+    }
+
+    .blueprint-btn {
+        font-size: clamp(0.9rem, 3vw, 1.25rem);
+    }
 }
