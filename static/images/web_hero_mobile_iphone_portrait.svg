@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 1170 2532" role="img" aria-label="Mobile hero banner: portrait blueprint style">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07212F"/>
+      <stop offset="100%" stop-color="#082230"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <rect width="64" height="64" fill="none"/>
+      <path d="M0 0H64 M0 0V64" stroke="#083649" stroke-opacity="0.18" stroke-width="1"/>
+      <path d="M32 0V64 M0 32H64" stroke="#083649" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" stitchTiles="stitch" result="turb"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.03"/>
+      </feComponentTransfer>
+    </filter>
+    <style><![CDATA[
+      .title { font-family: 'League Spartan', 'Bebas Neue', 'Oswald', system-ui, -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.5px; }
+      .subtitle { font-family: 'Inter', 'Source Sans 3', system-ui, -apple-system, sans-serif; font-weight: 500; }
+      .small { font-family: 'Inter', 'Source Sans 3', system-ui, -apple-system, sans-serif; font-weight: 400; }
+      .stroke-accent { stroke: #327C85; }
+      .stroke-mid { stroke: #1D5A67; }
+      .fill-accent { fill: #327C85; }
+      .text-light { fill: #E6F0F2; }
+    ]]></style>
+  </defs>
+  <rect width="1170" height="2532" fill="url(#bgGrad)"/>
+  <rect width="1170" height="2532" fill="url(#grid)"/>
+  <rect width="1170" height="2532" filter="url(#noise)" opacity="0.25"/><polyline points="695,649 767,649 767,229 840,229" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="840" cy="229" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="180,2226 202,2226 202,1529 224,1529" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="224" cy="1529" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="150,2110 310,2110 310,185 471,185" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="471" cy="185" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="208,1808 548,1808 548,318 888,318" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="888" cy="318" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="524,403 712,403 712,274 901,274" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="901" cy="274" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="285,946 221,946 221,2395 158,2395" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="158" cy="2395" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="844,235 664,235 664,222 484,222" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="484" cy="222" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="304,1218 597,1218 597,622 890,622" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="890" cy="622" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="273,2370 468,2370 468,2326 663,2326" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="663" cy="2326" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="402,454 409,454 409,1557 416,1557" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="416" cy="1557" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="231,2275 195,2275 195,2343 160,2343" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="160" cy="2343" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="154,875 601,875 601,2209 1048,2209" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="1048" cy="2209" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="907,1318 946,1318 946,2430 985,2430" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="985" cy="2430" r="3" class="fill-accent" opacity="0.7"/>
+<polyline points="960,1513 802,1513 802,1049 645,1049" fill="none" class="stroke-mid" stroke-opacity="0.35" stroke-width="2"/>
+<circle cx="645" cy="1049" r="3" class="fill-accent" opacity="0.7"/><circle cx="912.6" cy="455.76" r="526.50" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+<circle cx="912.6" cy="455.76" r="325.40" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+<circle cx="912.6" cy="455.76" r="201.11" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+<circle cx="912.6" cy="455.76" r="124.30" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+<circle cx="912.6" cy="455.76" r="76.82" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+<circle cx="912.6" cy="455.76" r="47.48" fill="none" class="stroke-accent" stroke-opacity="0.55" stroke-width="2"/>
+
+    <path d="M 93.0 1925.0 
+             Q 125.5 1886.0 171.0 1896.4
+             Q 173.60000000000002 1879.5 163.2 1873.0
+             Q 184.0 1873.0 194.4 1886.0
+             Q 202.2 1904.2 189.2 1919.8
+             L 204.8 1932.8
+             L 184.0 1951.0
+             L 207.4 1964.0
+             L 108.6 1964.0
+             L 93.0 1925.0 Z" 
+          fill="none" stroke="#327C85" stroke-width="2.6" opacity="0.7"/>
+    <text x="585.0" y="607.68" text-anchor="middle" class="title text-light" font-size="84">THE SCIENCE OF</text>
+    <text x="585.0" y="810.24" text-anchor="middle" class="title text-light" font-size="84">PRESTIGE TELEVISION</text>
+    <text x="585.0" y="987.48" text-anchor="middle" class="subtitle text-light" font-size="40" fill="#1D5A67" opacity="0.95">A Multi-Season Playbook</text>
+    <text x="585.0" y="1139.4" text-anchor="middle" class="subtitle text-light" font-size="34" fill="#1D5A67" opacity="0.9">Book • Audiobook • Podcast (exclusive here)</text>
+    
+        <g>
+          <rect x="164" y="1316" width="842" height="139" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
+          <text x="585.0" y="1404.96" text-anchor="middle" class="subtitle text-light" font-size="30">Read the Book</text>
+        </g>
+        <g>
+          <rect x="164" y="1530" width="842" height="139" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
+          <text x="585.0" y="1618.96" text-anchor="middle" class="subtitle text-light" font-size="30">Listen to Audiobook</text>
+        </g>
+        <g>
+          <rect x="164" y="1744" width="842" height="139" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
+          <text x="585.0" y="1832.96" text-anchor="middle" class="subtitle text-light" font-size="30">Podcast: Listen Here</text>
+        </g></svg>
