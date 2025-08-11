@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 :root {
     --color-bg: #07212F;
@@ -13,68 +15,19 @@
 }
 
 body {
-    background-color: var(--color-bg);
+    background: var(--color-bg) url('../images/blueprint_tile.svg') repeat;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     text-align: center;
-}
-
-h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    color: var(--color-accent);
-}
-
-.subtitle {
-    font-family: 'Inter', sans-serif;
-    color: var(--color-accent-muted);
 }
 
 ul {
     text-align: left;
 }
 
-#tabs {
-    margin: 10px 0;
-}
-
-.tab-button {
-    margin-right: 0.5rem;
-}
-
 .tab-button.active {
     background-color: var(--color-selected-tab);
     border-color: var(--color-selected-tab);
-}
-
-.btn-primary {
-    --bs-btn-bg: var(--color-accent-dark);
-    --bs-btn-border-color: var(--color-accent-dark);
-    --bs-btn-hover-bg: var(--color-accent-muted);
-    --bs-btn-hover-border-color: var(--color-accent-muted);
-    --bs-btn-active-bg: var(--color-accent-muted);
-    --bs-btn-active-border-color: var(--color-accent-muted);
-    --bs-btn-focus-shadow-rgb: 50,124,133;
-}
-
-.btn-outline-primary {
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: var(--color-accent);
-    --bs-btn-color: var(--color-accent);
-    --bs-btn-hover-bg: var(--color-accent);
-    --bs-btn-hover-border-color: var(--color-accent);
-    --bs-btn-hover-color: #ffffff;
-    --bs-btn-active-bg: var(--color-accent);
-    --bs-btn-active-border-color: var(--color-accent);
-    --bs-btn-active-color: #ffffff;
-    --bs-btn-focus-shadow-rgb: 50,124,133;
-}
-
-.btn-secondary {
-    --bs-btn-bg: var(--color-accent-dark);
-    --bs-btn-border-color: var(--color-accent-dark);
-    --bs-btn-hover-bg: var(--color-accent-muted);
-    --bs-btn-hover-border-color: var(--color-accent-muted);
 }
 
 .section-list {
@@ -91,4 +44,55 @@ ul {
 .playing {
     background-color: var(--color-bg-variant2);
     border-color: var(--color-accent);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blueprint-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-accent);
+    border-radius: 12px;
+    color: #e6f0f2;
+    background: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.blueprint-btn:hover {
+    background-color: var(--color-accent);
+    color: #ffffff;
+}
+
+#pdf-button {
+    top: 43.33%;
+    left: 6.25%;
+    width: 13.19%;
+    height: 6%;
+}
+
+#audiobook-button {
+    top: 43.33%;
+    left: 20.49%;
+    width: 13.19%;
+    height: 6%;
+}
+
+#podcast-button {
+    top: 43.33%;
+    left: 34.72%;
+    width: 13.19%;
+    height: 6%;
 }

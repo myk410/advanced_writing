@@ -99,11 +99,9 @@
     document.querySelectorAll('.tab-button').forEach((btn) => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.tab-button').forEach((b) => {
-                b.classList.remove('active', 'btn-primary');
-                b.classList.add('btn-outline-primary');
+                b.classList.remove('active');
             });
-            btn.classList.add('active', 'btn-primary');
-            btn.classList.remove('btn-outline-primary');
+            btn.classList.add('active');
             const target = btn.getAttribute('data-target');
             document.querySelectorAll('.tab-content').forEach((c) => {
                 c.style.display = c.id === target ? 'block' : 'none';
