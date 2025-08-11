@@ -8,7 +8,7 @@ servers and the Flask CLI.
 from pathlib import Path
 import json
 
-from flask import Flask, Response, jsonify, render_template, url_for
+from flask import Flask, Response, jsonify, render_template, url_for, send_from_directory
 
 app = Flask(__name__)
 
@@ -25,6 +25,14 @@ def index() -> str:
     with json_path.open(encoding="utf-8") as handle:
         chapters = json.load(handle).get("chapters", [])
     return render_template("index.html", book_title=book_title, chapters=chapters)
+
+
+@app.route("/pdf")
+def pdf() -> Response:
+    """Serve the full book PDF file."""
+    return send_from_directory(
+        app.static_folder, "The Science of Prestige Television.pdf"
+    )
 
 
 @app.route("/podcasts")
