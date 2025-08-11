@@ -37,3 +37,11 @@ def test_podcast_route() -> None:
     assert ids == list(range(1, 8))
     for item in data:
         assert item["src"] == f"/static/podcast/{item['id']}.mp3"
+
+
+def test_pdf_route() -> None:
+    """The PDF route should serve the book PDF file."""
+    client = app.test_client()
+    response = client.get("/pdf")
+    assert response.status_code == 200
+    assert response.mimetype == "application/pdf"
