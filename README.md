@@ -18,7 +18,9 @@ This repository hosts a one-page [Flask](https://flask.palletsprojects.com/) app
 
 * `static/` contains the book JSON file and the PDF.
 * `static/audio/` holds the audio files. Naming follows the pattern `<chapter>-<section>.mp3` except for chapter `0`, which is stored as `0.mp3`.
-* `static/podcast/` contains chapter-based podcast MP3 files named `1.mp3`, `2.mp3`, and so on.
+* `static/podcast/` holds one podcast episode per chapter, named
+  `<chapter>-<chapter-title>.mp3` (for example,
+  `1-Series-Engines-and-Premise-Design.mp3`).
 
 The JSON file maps chapter and section IDs to titles. The server reads this file to render the chapter list.
 
