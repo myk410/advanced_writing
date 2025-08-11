@@ -29,10 +29,11 @@ def index() -> str:
 
 @app.route("/podcasts")
 def podcasts() -> Response:
-    """Return metadata for available podcast files.
+    """Return metadata for podcast episodes.
 
-    The response is a JSON array with objects containing ``id`` (chapter
-    number), ``title`` and ``src`` URL for each podcast MP3. Chapter ``0`` is
+    MP3 files are named using the chapter ID (e.g. ``1.mp3``). The response
+    is a JSON array with objects containing ``id`` (chapter number),
+    ``title`` and ``src`` URL for each podcast file. Chapter ``0`` is
     excluded.
 
     Returns:
@@ -44,11 +45,8 @@ def podcasts() -> Response:
     podcast_dir = Path(app.static_folder) / "podcast"
     files = []
     for path in sorted(podcast_dir.glob("*.mp3")):
-        # filenames are prefixed with the chapter id, e.g.
-        # ``1-Series-Engines-and-Premise-Design.mp3``
-        stem = path.stem.split("-", 1)[0]
         try:
-            chap_id = int(stem)
+            chap_id = int(path.stem)
         except ValueError:  # skip unexpected files
             continue
         if chap_id == 0:
