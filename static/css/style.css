@@ -1,14 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
 
 :root {
-    --bs-primary: #4a90e2;
+    --color-bg: #07212F;
+    --color-bg-variant1: #071F2D;
+    --color-bg-variant2: #082230;
+    --color-accent: #327C85;
+    --color-accent-dark: #083649;
+    --color-accent-muted: #1D5A67;
+    --bs-primary: var(--color-accent);
+    --bs-secondary: var(--color-accent-dark);
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #212529;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
     text-align: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-accent-muted);
 }
 
 ul {
@@ -23,12 +41,38 @@ ul {
     margin-right: 0.5rem;
 }
 
+.btn-primary,
+.btn-outline-primary {
+    --bs-btn-bg: var(--color-accent);
+    --bs-btn-border-color: var(--color-accent);
+    --bs-btn-hover-bg: var(--color-accent-dark);
+    --bs-btn-hover-border-color: var(--color-accent-dark);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--color-accent);
+    --bs-btn-hover-color: #ffffff;
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--color-accent-dark);
+    --bs-btn-border-color: var(--color-accent-dark);
+    --bs-btn-hover-bg: var(--color-accent-muted);
+    --bs-btn-hover-border-color: var(--color-accent-muted);
+}
+
 .section-list {
     display: none;
     margin-top: 0.5rem;
 }
 
+.list-group-item {
+    background-color: var(--color-bg-variant1);
+    color: #ffffff;
+    border-color: var(--color-accent-dark);
+}
+
 .playing {
-    background-color: #e7f1ff;
-    border-color: var(--bs-primary);
+    background-color: var(--color-bg-variant2);
+    border-color: var(--color-accent);
 }
