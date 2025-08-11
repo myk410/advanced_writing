@@ -12,9 +12,10 @@
       }
 
       .st7 {
-        font-family: BebasNeueBold, 'Bebas Neue';
+        font-family: 'League Spartan', 'Bebas Neue', 'Oswald', system-ui, -apple-system, sans-serif;
         font-size: 112px;
-        letter-spacing: 0em;
+        font-weight: 800;
+        letter-spacing: 0.5px;
       }
 
       .st7, .st8, .st9, .st3, .st10, .st11 {
