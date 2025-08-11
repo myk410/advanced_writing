@@ -39,6 +39,22 @@ def test_podcast_route() -> None:
         assert item["src"] == f"/static/podcast/{item['id']}.mp3"
 
 
+def test_podcast_titles_subtitles() -> None:
+    """Podcast items should include titles and subtitles from the JSON."""
+    client = app.test_client()
+    response = client.get("/podcasts")
+    data = response.get_json()
+    json_path = Path(app.static_folder) / "The Science of Prestige Television.json"
+    with json_path.open(encoding="utf-8") as handle:
+        chapters = {int(c["id"]): c for c in json.load(handle)["chapters"]}
+    for item in data:
+        chapter = chapters[item["id"]]
+        expected_title = chapter.get("podcast_title") or chapter["title"]
+        expected_subtitle = chapter.get("podcast_subtitle", "")
+        assert item["title"] == expected_title
+        assert item["subtitle"] == expected_subtitle
+
+
 def test_pdf_route() -> None:
     """The PDF route should serve the book PDF file."""
     client = app.test_client()

@@ -116,9 +116,19 @@
                 const list = document.getElementById('podcastList');
                 items.forEach((item) => {
                     const li = document.createElement('li');
-                    li.textContent = item.title;
                     li.setAttribute('data-audio', item.src);
                     li.classList.add('list-group-item');
+
+                    const title = document.createElement('strong');
+                    title.textContent = item.title;
+                    li.appendChild(title);
+
+                    if (item.subtitle) {
+                        const subtitle = document.createElement('div');
+                        subtitle.textContent = item.subtitle;
+                        li.appendChild(subtitle);
+                    }
+
                     list.appendChild(li);
                 });
             })
