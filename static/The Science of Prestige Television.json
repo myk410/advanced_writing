@@ -7,6 +7,8 @@
 		{
 			"id": 1,
 			"title": "Series Engines and Premise Design",
+			"podcast_title": "The Invisible Power Source",
+			"podcast_subtitle": "Unpacking the Series Engine Behind Long-Running TV Shows",
 			"sections": [
 				{
 					"id": 1,
@@ -37,7 +39,9 @@
 		},
 		{
 			"id": 2,
-			"title": "Seasonal Architecture",
+			"title": "Seasonal Architecture",\
+			"podcast_title": "The Science of Seasonal Architecture",
+			"podcast_subtitle": "How TV Shows Hook You, Episode by Episode",
 			"sections": [
 				{
 					"id": 1,
