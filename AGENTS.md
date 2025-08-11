@@ -18,5 +18,5 @@ These guidelines apply to the entire repository.
 
 - Static assets live in `static/`; keep the audio naming scheme `<chapter>-<section>.mp3` (except `0.mp3`).
 - Keep `README.md` up to date when project layout or usage changes.
-- Never rename podcast MP3 files. Filenames `1.mp3` through `7.mp3` match chapter IDs and must stay fixed.
+- Never rename any MP3 files in this repository. Filenames are referenced directly (including `1.mp3` through `7.mp3` in the podcast directory) and must remain unchanged.
 
