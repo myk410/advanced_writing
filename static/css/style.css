@@ -28,6 +28,7 @@ ul {
 .tab-button.active {
     background-color: var(--color-selected-tab);
     border-color: var(--color-selected-tab);
+    color: #ffffff;
 }
 
 .section-list {
@@ -67,13 +68,20 @@ ul {
     background: transparent;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
     text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    box-shadow: none;
 }
 
-.blueprint-btn:hover {
+.blueprint-btn:hover,
+.blueprint-btn:focus,
+.blueprint-btn:active {
     background-color: var(--color-accent);
     color: #ffffff;
+    box-shadow: none;
 }
 
 #pdf-button {

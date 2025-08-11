@@ -76,17 +76,12 @@
     <text x="1024.0" y="655.68" text-anchor="middle" class="title text-light" font-size="112">THE SCIENCE OF</text>
     <text x="1024.0" y="874.24" text-anchor="middle" class="title text-light" font-size="112">PRESTIGE TELEVISION</text>
     <text x="1024.0" y="1065.48" text-anchor="middle" class="subtitle text-light" font-size="52" fill="#1D5A67" opacity="0.95">A Multi-Season Playbook</text>
-    <text x="1024.0" y="1229.4" text-anchor="middle" class="subtitle text-light" font-size="46" fill="#1D5A67" opacity="0.9">Book • Audiobook • Podcast (exclusive here)</text>
-    
         <g>
           <rect x="287" y="1420" width="1474" height="150" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
-          <text x="1024.0" y="1516.0" text-anchor="middle" class="subtitle text-light" font-size="36">Read the Book</text>
         </g>
         <g>
           <rect x="287" y="1651" width="1474" height="150" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
-          <text x="1024.0" y="1747.0" text-anchor="middle" class="subtitle text-light" font-size="36">Listen to Audiobook</text>
         </g>
         <g>
           <rect x="287" y="1882" width="1474" height="150" rx="14" fill="none" stroke="#327C85" stroke-width="2"/>
-          <text x="1024.0" y="1978.0" text-anchor="middle" class="subtitle text-light" font-size="36">Podcast: Listen Here</text>
         </g></svg>
