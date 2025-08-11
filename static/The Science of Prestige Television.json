@@ -108,6 +108,8 @@
 		{
 			"id": 4,
 			"title": "Episode Typology",
+			"podcast_title": "",
+			"podcast_subtitle": "",
 			"sections": [
 				{
 					"id": 1,
@@ -142,6 +144,8 @@
 		{
 			"id": 5,
 			"title": "Writers-Room Workflow",
+			"podcast_title": "",
+			"podcast_subtitle": "",
 			"sections": [
 				{
 					"id": 1,
@@ -164,6 +168,8 @@
 		{
 			"id": 6,
 			"title": "Advanced Techniques and Pitfalls",
+			"podcast_title": "",
+			"podcast_subtitle": "",
 			"sections": [
 				{
 					"id": 1,
@@ -190,6 +196,8 @@
 		{
 			"id": 7,
 			"title": "Appendices",
+			"podcast_title": "",
+			"podcast_subtitle": "",
 			"sections": [
 				{
 					"id": 1,
