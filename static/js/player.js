@@ -1,11 +1,6 @@
 (function () {
     const audio = document.getElementById('audioPlayer');
-    const pdfButton = document.getElementById('pdf-button');
     let currentTrackEl = null;
-
-    pdfButton.addEventListener('click', () => {
-        window.open(pdfPath, '_blank');
-    });
 
     function saveProgress() {
         const data = {
@@ -125,6 +120,7 @@
                     const li = document.createElement('li');
                     li.textContent = item.title;
                     li.setAttribute('data-audio', item.src);
+                    li.classList.add('list-group-item');
                     list.appendChild(li);
                 });
             })
