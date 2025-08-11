@@ -40,6 +40,7 @@ ul {
     background-color: var(--color-bg-variant1);
     color: #ffffff;
     border-color: var(--color-accent-dark);
+    cursor: pointer;
 }
 
 .playing {
