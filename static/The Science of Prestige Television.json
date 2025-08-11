@@ -39,7 +39,7 @@
 		},
 		{
 			"id": 2,
-			"title": "Seasonal Architecture",\
+			"title": "Seasonal Architecture",
 			"podcast_title": "The Science of Seasonal Architecture",
 			"podcast_subtitle": "How TV Shows Hook You, Episode by Episode",
 			"sections": [
@@ -80,6 +80,7 @@
 		{
 			"id": 3,
 			"title": "Character Arc Mapping",
+			"podcast_title": "Crafting Character Arcs for Prestige Television",
 			"sections": [
 				{
 					"id": 1,
