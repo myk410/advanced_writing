@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 2880 1200">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5 {
+        fill: none;
+      }
+
+      .st6 {
+        fill: url(#grid);
+      }
+
+      .st7 {
+        font-family: BebasNeueBold, 'Bebas Neue';
+        font-size: 112px;
+        letter-spacing: 0em;
+      }
+
+      .st7, .st8, .st9, .st3, .st10, .st11 {
+        isolation: isolate;
+      }
+
+      .st7, .st8, .st10 {
+        fill: #e6f0f2;
+      }
+
+      .st8 {
+        font-size: 32px;
+      }
+
+      .st8, .st10 {
+        font-family: SourceSansPro-Semibold, 'Source Sans Pro';
+        font-weight: 600;
+      }
+
+      .st9 {
+        fill: #327c85;
+      }
+
+      .st9, .st3 {
+        opacity: .7;
+      }
+
+      .st1, .st2, .st5 {
+        stroke-width: 2px;
+      }
+
+      .st1, .st3, .st5 {
+        stroke: #327c85;
+      }
+
+      .st12 {
+        fill: url(#linear-gradient);
+      }
+
+      .st2 {
+        stroke: #1d5a67;
+        stroke-opacity: .35;
+      }
+
+      .st3 {
+        stroke-width: 5.2px;
+      }
+
+      .st13, .st10 {
+        opacity: .9;
+      }
+
+      .st14 {
+        opacity: .18;
+      }
+
+      .st15 {
+        opacity: .12;
+      }
+
+      .st4 {
+        stroke: #083649;
+      }
+
+      .st10 {
+        font-size: 44px;
+      }
+
+      .st5 {
+        stroke-opacity: .6;
+      }
+
+      .st11 {
+        filter: url(#noise);
+        opacity: .25;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="479.83" y1="1140.05" x2="480.83" y2="1139.05" gradientTransform="translate(-1381920 1368060) scale(2880 -1200)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07212f"/>
+      <stop offset="1" stop-color="#082230"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="64" height="64" patternTransform="translate(-32 -15364) scale(1 -1)" patternUnits="userSpaceOnUse" viewBox="0 0 64 64">
+      <g>
+        <rect class="st0" width="64" height="64"/>
+        <rect class="st0" width="64" height="64"/>
+        <g>
+          <path d="M0,64h64M0,64V0"/>
+          <g class="st14">
+            <path class="st4" d="M0,64h64M0,64V0"/>
+          </g>
+        </g>
+        <g>
+          <path d="M32,64V0M0,32h64"/>
+          <g class="st15">
+            <path class="st4" d="M32,64V0M0,32h64"/>
+          </g>
+        </g>
+      </g>
+    </pattern>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.9" numOctaves="1" result="turb" stitchTiles="stitch" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.03" type="linear"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect class="st12" width="2880" height="1200"/>
+  <rect class="st6" width="2880" height="1200"/>
+  <g class="st11">
+    <rect width="2880" height="1200"/>
+  </g>
+  <polyline class="st2" points="2659 268 1400 268 1400 603 142 603"/>
+  <circle class="st9" cx="142" cy="603" r="3"/>
+  <polyline class="st2" points="1043 497 827 497 827 249 611 249"/>
+  <circle class="st9" cx="611" cy="249" r="3"/>
+  <polyline class="st2" points="2811 1156 1603 1156 1603 904 396 904"/>
+  <circle class="st9" cx="396" cy="904" r="3"/>
+  <polyline class="st2" points="170 101 296 101 296 487 423 487"/>
+  <circle class="st9" cx="423" cy="487" r="3"/>
+  <polyline class="st2" points="992 1074 1748 1074 1748 94 2505 94"/>
+  <circle class="st9" cx="2505" cy="94" r="3"/>
+  <polyline class="st2" points="2338 447 2519 447 2519 1156 2701 1156"/>
+  <circle class="st9" cx="2701" cy="1156" r="3"/>
+  <polyline class="st2" points="1758 491 1818 491 1818 609 1879 609"/>
+  <circle class="st9" cx="1879" cy="609" r="3"/>
+  <polyline class="st2" points="66 366 918 366 918 736 1771 736"/>
+  <circle class="st9" cx="1771" cy="736" r="3"/>
+  <polyline class="st2" points="1178 358 1049 358 1049 729 921 729"/>
+  <circle class="st9" cx="921" cy="729" r="3"/>
+  <polyline class="st2" points="458 229 1027 229 1027 238 1596 238"/>
+  <circle class="st9" cx="1596" cy="238" r="3"/>
+  <polyline class="st2" points="1510 744 2011 744 2011 581 2512 581"/>
+  <circle class="st9" cx="2512" cy="581" r="3"/>
+  <polyline class="st2" points="217 980 1226 980 1226 295 2236 295"/>
+  <circle class="st9" cx="2236" cy="295" r="3"/>
+  <polyline class="st2" points="1590 201 1945 201 1945 640 2301 640"/>
+  <circle class="st9" cx="2301" cy="640" r="3"/>
+  <polyline class="st2" points="2614 780 2509 780 2509 433 2404 433"/>
+  <circle class="st9" cx="2404" cy="433" r="3"/>
+  <polyline class="st2" points="324 133 1536 133 1536 506 2748 506"/>
+  <circle class="st9" cx="2748" cy="506" r="3"/>
+  <polyline class="st2" points="1225 203 1109 203 1109 246 993 246"/>
+  <circle class="st9" cx="993" cy="246" r="3"/>
+  <polyline class="st2" points="1596 609 1746 609 1746 787 1897 787"/>
+  <circle class="st9" cx="1897" cy="787" r="3"/>
+  <polyline class="st2" points="706 798 1100 798 1100 469 1495 469"/>
+  <circle class="st9" cx="1495" cy="469" r="3"/>
+  <circle class="st5" cx="2073.6" cy="180" r="520"/>
+  <circle class="st5" cx="2073.6" cy="180" r="321.38"/>
+  <circle class="st5" cx="2073.6" cy="180" r="198.63" transform="translate(480.06 1518.98) rotate(-45)"/>
+  <circle class="st5" cx="2073.6" cy="180" r="122.76"/>
+  <circle class="st5" cx="2073.6" cy="180" r="75.87" transform="translate(1557.35 2196.36) rotate(-80.6)"/>
+  <circle class="st5" cx="2073.6" cy="180" r="46.89" transform="translate(1504.71 2182.15) rotate(-79.1)"/>
+  <path class="st3" d="M180,924c43.33-52,95.33-71.07,156-57.2,3.47-22.53-1.73-38.13-15.6-46.8,27.73,0,48.53,8.67,62.4,26,10.4,24.27,6.93,46.8-10.4,67.6l31.2,26-41.6,36.4,46.8,26h-197.6l-31.2-78Z"/>
+  <text class="st7" transform="translate(180 360)"><tspan x="0" y="0">THE SCIENCE OF PRESTIGE TELEVISION</tspan></text>
+  <text class="st10" transform="translate(180 460)"><tspan x="0" y="0">A Multi-Season Playbook • Book • Audiobook • Podcast</tspan></text>
+  <g class="st13">
+    <rect class="st1" x="180" y="520" width="380" height="72" rx="12" ry="12"/>
+    <text class="st8" transform="translate(210 570)"><tspan x="0" y="0">Read the Book</tspan></text>
+    <rect class="st1" x="590" y="520" width="380" height="72" rx="12" ry="12"/>
+    <text class="st8" transform="translate(620 570)"><tspan x="0" y="0">Listen to Audiobook</tspan></text>
+    <rect class="st1" x="1000" y="520" width="380" height="72" rx="12" ry="12"/>
+    <text class="st8" transform="translate(1030 570)"><tspan x="0" y="0">Listen to Podcast</tspan></text>
+  </g>
+</svg>
