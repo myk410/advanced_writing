@@ -41,16 +41,19 @@ ul {
     margin-right: 0.5rem;
 }
 
-.btn-primary,
-.btn-outline-primary {
-    --bs-btn-bg: var(--color-accent);
-    --bs-btn-border-color: var(--color-accent);
-    --bs-btn-hover-bg: var(--color-accent-dark);
-    --bs-btn-hover-border-color: var(--color-accent-dark);
+.btn-primary {
+    --bs-btn-bg: var(--color-accent-dark);
+    --bs-btn-border-color: var(--color-accent-dark);
+    --bs-btn-hover-bg: var(--color-accent-muted);
+    --bs-btn-hover-border-color: var(--color-accent-muted);
 }
 
 .btn-outline-primary {
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--color-accent);
     --bs-btn-color: var(--color-accent);
+    --bs-btn-hover-bg: var(--color-accent);
+    --bs-btn-hover-border-color: var(--color-accent);
     --bs-btn-hover-color: #ffffff;
 }
 
