@@ -7,6 +7,7 @@
     --color-accent: #327C85;
     --color-accent-dark: #083649;
     --color-accent-muted: #1D5A67;
+    --color-selected-tab: #F28C28;
     --bs-primary: var(--color-accent);
     --bs-secondary: var(--color-accent-dark);
 }
@@ -39,6 +40,11 @@ ul {
 
 .tab-button {
     margin-right: 0.5rem;
+}
+
+.tab-button.active {
+    background-color: var(--color-selected-tab);
+    border-color: var(--color-selected-tab);
 }
 
 .btn-primary {
