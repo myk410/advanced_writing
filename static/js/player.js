@@ -115,8 +115,8 @@
     });
 
     function loadPodcasts() {
-        fetch('/podcasts')
-            .then((resp) => resp.json())
+        fetch(podcastsUrl)
+            .then((resp) => (resp.ok ? resp.json() : []))
             .then((items) => {
                 const list = document.getElementById('podcastList');
                 items.forEach((item) => {
@@ -125,7 +125,8 @@
                     li.setAttribute('data-audio', item.src);
                     list.appendChild(li);
                 });
-            });
+            })
+            .catch(() => {});
     }
 
     loadPodcasts();
