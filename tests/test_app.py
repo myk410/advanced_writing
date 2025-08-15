@@ -34,7 +34,11 @@ def test_podcast_route() -> None:
     data = response.get_json()
     assert isinstance(data, list)
     ids = [item["id"] for item in data]
-    assert ids == list(range(1, 8))
+    podcast_dir = Path(app.static_folder) / "podcast"
+    expected_ids = sorted(
+        int(p.stem) for p in podcast_dir.glob("*.mp3") if p.stem.isdigit()
+    )
+    assert ids == expected_ids
     for item in data:
         assert item["src"] == f"/static/podcast/{item['id']}.mp3"
 
