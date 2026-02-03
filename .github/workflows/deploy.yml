@@ -16,6 +16,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: 76.13.116.139
-          username: ${{ secrets.FTP_USER }}
+          username: admin_github
           password: ${{ secrets.FTP_PASS }}
-          server-dir: apps/advanced_writing/
+          server-dir: advanced_writing/
